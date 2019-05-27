@@ -13,6 +13,7 @@
         <module>user-provider</module>
         <module>user-consumer</module>
         <module>commons</module>
+        <module>user-service-api</module>
     </modules>
 
     <properties>

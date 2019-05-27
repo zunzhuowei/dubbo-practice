@@ -27,7 +27,7 @@
         </dependency>
         <dependency>
             <groupId>com.game.qs</groupId>
-            <artifactId>commons</artifactId>
+            <artifactId>user-service-api</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
