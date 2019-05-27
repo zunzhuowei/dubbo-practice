@@ -1,5 +1,5 @@
-dubbo:
-  protocol:
-    host: 127.0.0.1
-    port: 6656
-    name: myDubbo
+#dubbo:
+#  protocol:
+#    host: 127.0.0.1
+#    port: 6656
+#    name: dubbo

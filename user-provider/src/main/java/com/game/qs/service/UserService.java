@@ -18,6 +18,7 @@ public class UserService implements IUserService {
     @Value("${dubbo.application.name}")
     private String serviceName;
 
+    @Override
     public String sayHello(String name) {
         return String.format("[%s] : Hello, %s", serviceName, name);
     }

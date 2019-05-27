@@ -2,7 +2,7 @@ dubbo:
   scan:
     base-packages: com.game.qs
   protocol:
-    name: myDubbo
+    name: dubbo
     port: 6656
   registry:
     address: N/A
