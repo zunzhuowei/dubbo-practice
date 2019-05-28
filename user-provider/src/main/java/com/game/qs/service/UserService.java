@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
  * Created by zun.wei on 2019/5/27 17:58.
  * Description:
  */
-@Service(version = "${service.user.version}")
+@Service
 public class UserService implements IUserService {
 
 

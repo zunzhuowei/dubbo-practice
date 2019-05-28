@@ -1,26 +1,15 @@
-service:
-  user:
-    version: 1.0.0
-    url: dubbo://127.0.0.1:6656
+dubbo:
+  application:
+    ##### 注册服务的名称
+    name: user-consumer-service
+  ##### 注册中心地址
+  registry:
+    address: zookeeper://192.168.1.128:2181
+  ##### 调用服务超时时间
+  consumer:
+    timeout: 5000
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    dubbo:
-      enabled: true
-    dubboshutdown:
-      enabled: true
-    dubboconfigs:
-      enabled: true
-    dubboservices:
-      enabled: true
-    dubboreferences:
-      enabled: true
-    dubboproperties:
-      enabled: true
-  security:
-  ## Deprecated 2.x
-    enabled: false
+spring:
+  output:
+    ansi:
+      enabled: always

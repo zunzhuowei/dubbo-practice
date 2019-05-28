@@ -1,12 +1,18 @@
 dubbo:
-  scan:
-    base-packages: com.game.qs
+  application:
+    ###########注册到注册中心的名称############
+    name: user-provider-service
+  ###########采用协议和端口号################
   protocol:
+    ###########采用dubbo协议####################
     name: dubbo
-    port: 6656
+    ###########发布dubbo端口号为20880###########
+    port: 20880
   registry:
-    address: N/A
+    ###########注册中心地址#####################
+    address: zookeeper://192.168.1.128:2181
 
-service:
-  user:
-    version: 1.0.0
+spring:
+  output:
+    ansi:
+      enabled: always
