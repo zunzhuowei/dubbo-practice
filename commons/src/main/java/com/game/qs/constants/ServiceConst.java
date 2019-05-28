@@ -2,9 +2,9 @@ package com.game.qs.constants;
 
 /**
  * Created by zun.wei on 2019/5/27 17:46.
- * Description:
+ * Description: 服务常量
  */
-public interface ServiceConsts {
+public interface ServiceConst {
 
 
     interface ServiceVersion {

@@ -1,6 +1,6 @@
 package com.game.qs;
 
-import com.game.qs.constants.ServiceConsts;
+import com.game.qs.constants.ServiceConst;
 import com.game.qs.service.IUserService;
 import org.apache.dubbo.config.annotation.Reference;
 import org.slf4j.Logger;
@@ -19,7 +19,7 @@ public class UserConsumerApp {
 
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Reference(version = ServiceConsts.ServiceVersion.USER_VERSION,
+    @Reference(version = ServiceConst.ServiceVersion.USER_VERSION,
             url = "dubbo://127.0.0.1:6656")
     private IUserService userService;
 
