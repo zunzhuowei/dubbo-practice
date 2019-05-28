@@ -1,5 +1,26 @@
-#dubbo:
-#  protocol:
-#    host: 127.0.0.1
-#    port: 6656
-#    name: dubbo
+service:
+  user:
+    version: 1.0.0
+    url: dubbo://127.0.0.1:6656
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    dubbo:
+      enabled: true
+    dubboshutdown:
+      enabled: true
+    dubboconfigs:
+      enabled: true
+    dubboservices:
+      enabled: true
+    dubboreferences:
+      enabled: true
+    dubboproperties:
+      enabled: true
+  security:
+  ## Deprecated 2.x
+    enabled: false

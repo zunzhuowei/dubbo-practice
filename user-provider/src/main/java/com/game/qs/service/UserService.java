@@ -1,6 +1,5 @@
 package com.game.qs.service;
 
-import com.game.qs.constants.ServiceConst;
 import org.apache.dubbo.config.annotation.Service;
 import org.springframework.beans.factory.annotation.Value;
 
@@ -8,7 +7,7 @@ import org.springframework.beans.factory.annotation.Value;
  * Created by zun.wei on 2019/5/27 17:58.
  * Description:
  */
-@Service(version = ServiceConst.ServiceVersion.USER_VERSION)
+@Service(version = "${service.user.version}")
 public class UserService implements IUserService {
 
 

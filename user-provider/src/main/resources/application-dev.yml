@@ -6,3 +6,7 @@ dubbo:
     port: 6656
   registry:
     address: N/A
+
+service:
+  user:
+    version: 1.0.0
