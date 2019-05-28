@@ -3,51 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>dubbo-practice-parent</artifactId>
+        <artifactId>project-consumer</artifactId>
         <groupId>com.game.qs</groupId>
         <version>${dubbo-project.version}</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>user-provider</artifactId>
-
+    <artifactId>user-consumer</artifactId>
 
     <dependencies>
-        <!-- Dubbo Spring Boot Starter -->
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.dubbo</groupId>
-            <artifactId>dubbo</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-configuration-processor</artifactId>
-            <optional>true</optional>
-        </dependency>
         <dependency>
             <groupId>com.game.qs</groupId>
             <artifactId>user-service-api</artifactId>
-            <version>${dubbo-project.version}</version>
         </dependency>
     </dependencies>
 
     <build>
         <finalName>${project.artifactId}</finalName>
         <resources>
-            <resource>
-                <directory>src/main/resources</directory>
-            </resource>
             <resource>
                 <directory>src/main/resources</directory>
                 <includes>
@@ -62,7 +35,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration><!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>com.game.qs.UserProviderApp</mainClass>
+                    <mainClass>com.game.qs.UserConsumerApp</mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

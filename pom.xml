@@ -10,10 +10,10 @@
     <version>${dubbo-project.version}</version>
 
     <modules>
-        <module>user-provider</module>
-        <module>user-consumer</module>
         <module>commons</module>
         <module>project-service-api</module>
+        <module>project-consumer</module>
+        <module>project-provider</module>
     </modules>
 
     <properties>
