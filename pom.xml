@@ -20,7 +20,7 @@
         <dubbo-project.version>1.0-SNAPSHOT</dubbo-project.version>
         <junit.version>4.12</junit.version>
         <common-io.version>2.6</common-io.version>
-        <netty.version>4.1.28.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
         <swagger2.version>2.9.2</swagger2.version>
         <wechat-tools.version>3.3.0</wechat-tools.version>
         <spring.cloud.version>2.0.2.RELEASE</spring.cloud.version>
